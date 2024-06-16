@@ -65,55 +65,37 @@ tl.to("#loader",{
   display:"none"
   // duration:0.5
 })
-
+tl.from("#page1",{
+  y:-100,
+  opacity:0,
+  duration:1
+})
 tl.from("nav img",{
     y:-30,
     opacity:0,
     duration:1,
     delay:0.5
-})
+},"hk")
 tl.from("#part2 h4",{
     y:-20,
     duration:0.5,
     // stagger:1,
     opacity:0,
     delay:0.5
-})
-tl.to("#page1 .page1-content .firstpart .p1v ul ",{
-    x:-500,
-    duration:1,
-    scrollTrigger:{
-      trigger:"#page1",
-      scroller:"#main",
-      start:"top 65%",
-      end:"top 50%",
-      // markers:true,
-      scrub:3
-    }
-})
-tl.to("#page1 .page1-content .firstpart .p1branch ul ",{
+},"hk")
+tl.from("#page1 .page1-content .firstpart .p1v ul ",{
+    x:-1000,
+    duration:0.5,
+    rotate:90
+},"hk")
+tl.from("#page1 .page1-content .firstpart .p1branch ul ",{
   x:500,
-  duration:2,
-  scrollTrigger:{
-    trigger:"#page1",
-    scroller:"#main",
-    start:"top 80%",
-    end:"top 50%",
-    // markers:true,
-    scrub:3
-  }
+  duration:0.5,
+  rotate:90
 })
-tl.to("#page1 .page1-content .secondpart h1 ",{
-  y:-500,
-  duration:2,
-  scrollTrigger:{
-    trigger:"#page1",
-    scroller:"#main",
-    start:"top 70%",
-    end:"top 60%",
-    // markers:true,
-    scrub:2
-  }
+tl.from("#page1 .page1-content .secondpart h1 ",{
+  y:500,
+  duration:0.5,
 })
 tl.to("#page2",{
  backgroundColor:"black",
