@@ -438,6 +438,26 @@ tl.from("#page7 .footer button",{
   }
 })
 
+let userName = document.getElementById("name");
+let phone = document.getElementById("phone");
+let userEmail = document.getElementById("email");
 
+
+let resetHandler = function () {
+  userName.value = "";
+  userEmail.value = "";
+  phone.value = "";
+};
+
+
+let submitHandler = function () {
+ 
+    const conatctFormData =
+    userName.value + " " + userEmail.value + " " + phone.value;
+    localStorage.setItem("Data", conatctFormData);
+    alert("Your Message Sent Successfully ");
+    resetHandler();
+  
+};
 
 
