@@ -467,19 +467,20 @@
     </div>
 
     
-    <div id="registrationForm">
-        <form>
-            <h2>Registration Form</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone Number:</label>
-            <input type="number" id="phone" name="phone" required>
-            <input type="submit" value="Submit">
-            <button type="button" id="closeForm" onclick="document.getElementById('registrationForm').style.display='none'">Close</button>
-        </form>
-    </div>
+   <div id="registrationForm">
+                <form>
+                    <h2>Registration Form</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" name="phone" required>
+                    <input type="submit" id="submit" onclick="submitHandler()" value="Submit">
+                    <button type="button" id="closeForm"
+                        onclick="document.getElementById('registrationForm').style.display='none'">Close</button>
+                </form>
+            </div>
    </div>
     
      
